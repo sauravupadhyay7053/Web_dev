@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessPoint</title>
+</head><link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+   /*CSS for the body*/
+    body{
+        
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background-image: url("img/img2.jpg" );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    bg-image {
+    /* The image used */
+    background-image: url("img/10.jpg" );
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    }
+    .left{
+        display: inline-block;
+        
+        position: absolute;
+        left: 60px;
+        top: 20;
+    }
+    .left img{
+        width: 150px;
+        height: 100px;
+        /*border: 2px solid grey;*/
+        
+        
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mid{
+        display: block; 
+        width: 36%;
+        margin: 20px auto;
+       /* border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        padding: 25px 18px;
+        
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+        font-size: 17px;
+    }
+    .btn{
+        font-family: 'Baloo 2', cursive;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px solid grey;
+        border-radius: 10px;
+    }  
+    .btn:hover{
+        background-color: grey;
+        color: white;
+        border: 2px solid white;
+    } 
+    .container{
+        border: 2px solid white;
+        border-radius: 15px;
+        margin: 2px 2px;
+        padding: 4px 4px;
+        position: absolute;
+        width: 30%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: gold;
+    } 
+    .cont1  {
+        /*border: 2px solid white;*/
+        border-radius: 15px;
+        margin: 2px 2px;
+        padding: 4px 4px;
+        position: absolute;
+        width: 20%;
+        color: pink;
+        top: 400px;
+        left: 50px;
+        display: inline-block;
+    }
+    .cont h2{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .imp {
+        /*border: 2px solid white;*/
+        border-radius: 15px;
+        margin: 2px 2px;
+        padding: 4px 4px;
+        position: absolute;
+        width: 20%;
+        color: rgb(0, 255, 225);
+        top: 400px;
+        right : 40px;
+        display: inline-block;
+    }
+    .imp h3{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .form-group input{
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display:block;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 10px;
+        padding: 1px;
+    }
+    
+    .container h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .container button{
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display:block;
+        border: 2px solid white;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 10px;
+        padding: 1px;
+        background-color: transparent;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+
+</style>
+
+<body>
+    <header class="header">
+        
+        <!--left for logo--> 
+        <div class="left">
+            <img src="img/Logo3.png" alt="">
+            <div>FitnessFreak</div> 
+        </div>
+
+        <!--mid for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness freak</a></li>
+                <li><a href="#">Contac Us</a></li>
+            </ul>
+
+        </div>
+        <!--right for buttons-->
+        <div class="right">
+            <button class="btn">SignUp</button>
+            <button class="btn">Log In</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>Get Fit, Get Healthy, Get Happy </h1>
+            <h1>Join Us</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" id="contact no" placeholder="Enter your Contact no">
+                </div>
+                <div class="form-group">
+        
+                    <input type="text" id="age" placeholder="Enter your Age">
+                </div>
+                <button class="btn">Join Now</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="cont1">
+        <div class="con1">
+            <h2>“If you want something you’ve never had, you must be willing to do something you’ve never done.” </h2>
+        </div>  
+    </div>
+
+    <div class="imp">
+        <div class="impu">
+            <h3>“What seems impossible today will one day become your warm-up.”</h3>
+        </div>       
+    </div>
+
+
+
+    
+</body>
+</html>
